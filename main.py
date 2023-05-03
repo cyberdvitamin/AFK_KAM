@@ -158,6 +158,7 @@ root.resizable(False, False)
 
 root.title("AFK KAM v1.0")
 
+
 # Creating the title label
 
 title_label = ttk.Label(root, text="Keyboard And Mouse Script", font=("Arial", 20))
@@ -216,7 +217,6 @@ keyboard_var = tk.IntVar()
 keyboard_checkbox = tk.Checkbutton(root, text="Keyboard text", variable=keyboard_var, onvalue=1, offvalue=0,
                                    font=label_font, padx=20, pady=5)
 keyboard_checkbox.pack()
-
 
 keyboard_entry = tk.Entry(root, font=entry_font)
 keyboard_entry.config(borderwidth=3, highlightthickness=1, highlightbackground="black")
