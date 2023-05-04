@@ -45,8 +45,7 @@ def keyboard_on_focusout(event):
 def shutdown_checkbox_value():
     if shutdown_var.get() == 1:
         pyautogui.hotkey('win', 'r')
-        pyautogui.write("control panel")
-        # pyautogui.write("shutdown /s") # delete control panel and make shutdown public
+        pyautogui.write("shutdown /s")
         pyautogui.press("enter")
 
 
